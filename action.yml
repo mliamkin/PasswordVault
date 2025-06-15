@@ -1,5 +1,15 @@
+on:
+  push:
+    branches:
+      - main
+      - dockerfile
+    pull_request:
+      types: [opened, synchronize, reopened]
+    issues:
+      types: [opened, closed, labeled]
+
 name: 'Package Password Vault'
-description: 'Pakcage the Password Vault application into an executable'
+description: 'Package the Password Vault application into an executable'
 runs:
   using: 'docker'
   image: 'Dockerfile'
