@@ -3,10 +3,6 @@ on:
     branches:
       - main
       - dockerfile
-    pull_request:
-      types: [opened, synchronize, reopened]
-    issues:
-      types: [opened, closed, labeled]
 
 name: 'Package Password Vault'
 description: 'Package the Password Vault application into an executable'
